@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WEB1 - CSS </title>
+<meta charset="utf-8"> 
+<link rel="stylesheet" href="style.css"> 
+<script>
+  function sum(left, right) {
+   document.write(left+right+'<br>');
+   }
+   function sumColorRed(left, right) {  (//sumColorRed 변수명,매개변수 쓸때 첫 스타트는 소문자, 중간. 끝은 시작글자 대문자)
+document.write('<div style="color: red;">' + left+right+'</div><br>');
+}
+
+function sum2(left, right) { //함수의 결과값만 따로 재사용을 하기 위해서 RETURN키워드를 사용했음.)
+ RETURN LEFT + RIGHT
+}
+
+   sum(2,3); //:인자값
+   sum(3,4); 
+  sumColorRed(1,100);
+  
+  document.write('<li>SUM2 함수를 따로 빼서 사용중. 문자열 결과로 나와서. 임의로 변경.</li>');
+  document.write('<div style="color: red">'+ sum2(2,3)+'</div><br>');
+document.write('<div style="font-size: 3rem">'+sum2(2,3)+'</div><br>');
+
+   </script>
+</head>
+<body>
+  
+
+<h1><a href="index.html">WEB</a></h1>
+<div id="grid">
+<ol>
+<li><a href="1.html">HTML</a></li>
+<li><a href="2.html">CSS</a></li>
+<li><a href="3.html">JavaScript</a></li> 
+</ol>
+<div>
+  <input
+  type="button"
+  value="night"
+  onclick="
+if(this.value === 'night') {
+  var target = document.querySelector('body');
+  target.style.backgroundColor = 'black';
+  target.style.color= 'white';
+  this.value = 'day';
+  
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while ( i < alist.length) {
+            alist[i].style.color = 'powderblue';
+            console.log(alist[i]);
+            i = i + 1 ;
+        }
+    
+} else {
+var target = document.querySelector('body');
+  target.style.backgroundColor = 'white';
+  target.style.color= 'black';
+  this.value = 'night';
+
+ 
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while ( i < alist.length) {
+            alist[i].style.color = 'green';
+            console.log(alist[i]);
+            i = i + 1 ;
+        }
+  
+}
+">
+
+
+<h2>CSS란 무엇인가?</h2>
+
+
+
+<p style="margin-top: 40px;"> 
+Cascading Style Sheets (CSS) is a style sheet language used for describing the presentation
+of a document written in a markup language such as HTML.[1] CSS is a cornerstone technology
+of the World Wide Web, alongside HTML and JavaScript.[2]
+CSS is designed to enable the separation of presentation and content, including layout,
+colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility
+and control in the specification of presentation characteristics; enable multiple web pages to
+share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity
+and repetition in the structural content
+</p>
+</div>
+</div>
+</body>
+</html>

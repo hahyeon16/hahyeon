@@ -1,22 +1,21 @@
 var Body = {
   setColor: function(color) {
-    $('body').css('color', color);
-    // document.querySelector('body').style.color = color;
+   $('body').css('color', color);
+     //document.querySelector('body').style.color = color;
  },
   setBackgroundColor: function(color) {
-    $('body').css('color', color);
+    $('body').css('backgroundColor', color);
     // document.querySelector('body').style.backgroundColor = color;
-
- } 
+ }
  }
 
- var Links = {  
-  setColor: function(color) {
-   var alist = document.querySelectorall('a');
+ var Links = {
+  setColor: function(color) {  
+   var alist = document.querySelectorAll('a');
    var i = 0;
    while(i < alist.length) {
    alist[i].style.color = color;
-   i = i + 1; 
+   i = i + 1;
    }
    }
    }
@@ -55,7 +54,7 @@ function nightDayHandler(self) {
               Body.setColor('white');
               self.value = 'day'
               //setColor('powderblue');
-              Links.setColor('powderblue')
+              Links.setColor('red')
              
           } else {
             //  target.style.backgroundColor = 'white';

@@ -11,16 +11,16 @@ a {
 h1 {
   font-size: 100px;
   text-align: center;
-  border-bottom: 1px solid gray; 
+  border-bottom: 1px solid gray;
   margin: 0;
   padding: 20px;
-}   
- 
+} 
+
 #grid ol {
   border-right: 1px solid gray;
   width: 100px;
   margin: 0;
-  padding: 20px; 
+  padding: 20px;
 }
 
 #grid {
